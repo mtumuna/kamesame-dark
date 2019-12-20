@@ -1,0 +1,287 @@
+/* ==UserStyle==
+@name           KameSame SimplyDark
+@namespace      community.wanikani.com
+@version        1.0.0
+@description    A dark theme for the KameSame platform.
+@author         vnClJTUL
+==/UserStyle== */
+
+@-moz-document domain("kamesame.com") {
+/* 
+ * General Styles
+ */
+#app.kamesame {
+    color: #aeaeae;
+    background: #111;
+}
+#app.kamesame a, #app.kamesame a:visited {
+    color: #0d7aca;
+}
+#app.kamesame nav {
+    color: #aeaeae;
+    background: #262626;
+}
+#app.kamesame nav li a .label {
+    color: #aeaeae;
+}
+#app.kamesame .level-bar {
+    color: #aeaeae;
+    background: #111;
+}
+#app.kamesame .level-bar .bar {
+    background: #223;
+    border-color: #335;
+}
+#app.kamesame .level-bar .bar .progress.prior {
+    background-color: rgba(80,76,128,.9);
+}
+#app.kamesame .level-bar .bar .progress.earned {
+    background-color: rgba(128, 123, 172, .65);
+}
+#app.kamesame button, #app.kamesame button[disabled], #app.kamesame button[readonly], #app.kamesame input, #app.kamesame input[disabled], #app.kamesame input[readonly], #app.kamesame select, #app.kamesame select[disabled], #app.kamesame select[readonly], #app.kamesame textarea {
+    color: #aeaeae;
+    background-color: #222;
+}
+#app.kamesame button:focus, #app.kamesame input:focus, #app.kamesame select:focus {
+    border-color: #0d7aca;
+}
+#app.kamesame .checkbox input[type=checkbox] {
+    background-color: #222;
+}
+#app.kamesame a.item.vocabulary {
+    color: #726da8;
+    background-color: #223;
+}
+#app.kamesame a.item.vocabulary:hover {
+    background-color: #2c2c42;
+}
+#app.kamesame a.item.kanji {
+    color: #bd2a50;
+    background-color: #322;
+}
+#app.kamesame a.item.kanji:hover {
+    background-color: #422c2c;
+}
+#app.kamesame #notification>div.info {
+    background-color: #111;
+    border-color: #243897;
+}
+#app.kamesame #notification>div.info .dismiss, #app.kamesame #notification>div.info .text {
+    color: #919ab3;
+}
+
+/* 
+ * Home Styles
+ */
+#app.kamesame #home .stats h4 {
+    color: #aeaeae;
+    background-color: #111;
+}
+#app.kamesame #home .progress-bar .apprentice {
+    background-color: #730e28;
+}
+#app.kamesame #home .progress-bar .apprentice .label {
+    color: #bd2a50;
+}
+#app.kamesame #home .progress-bar .guru {
+    background-color: #3b385e;
+}
+#app.kamesame #home .progress-bar .guru .label {
+    color: #726da8;
+}
+#app.kamesame #home .progress-bar .master {
+    background-color: #062f4a;
+}
+#app.kamesame #home .progress-bar .master .label {
+    color: #0e6ba8;
+}
+#app.kamesame #home .progress-bar .enlightened {
+    background-color: #1864a2;
+}
+#app.kamesame #home .progress-bar .enlightened .label {
+    color: #7695ae;
+}
+#app.kamesame #home .progress-bar .burned {
+    background-color: #000;
+}
+#app.kamesame #home .progress-bar .burned .label {
+    color: #555;
+}
+#app.kamesame #home .progress-bar>* .datum {
+    color: #aeaeae;
+}
+
+/* 
+ * Lessons Styles
+ */
+#app.kamesame #lessons .lesson-count-message.info {
+    color: #726da8;
+    background-color: #223;
+    border-color: #224;
+}
+#app.kamesame #lessons .lesson-count-message.error {
+    color: #bd2a50;
+    background-color: #322;
+    border-color: #422;
+}
+#app.kamesame #lessons form .word-dump {
+    border-color: #333;
+}
+
+/* 
+ * Reviews Styles
+ */
+#app.kamesame #reviews .wip {
+    background-color: #223;
+}
+#app.kamesame #reviews .wip h2 {
+    color: #596385;
+}
+#app.kamesame #reviews .wip p {
+    color: #aeaeae;
+}
+#app.kamesame #reviews .wip .buttons button {
+    color: #aeaeae;
+    background-color: #222;
+    box-shadow: none;
+    border: 1px solid #333;
+}
+#app.kamesame #reviews .reviews-progress>* {
+    background-color: #223;
+}
+#app.kamesame #reviews .reviews-progress>* .datum.timestamp {
+    color: #aeaeae;
+}
+#app.kamesame #reviews .reviews-progress .faux-link, #app.kamesame #reviews .reviews-progress>a {
+    background-color: #730e28;
+}
+#app.kamesame #reviews .reviews-progress .faux-link .label, #app.kamesame #reviews .reviews-progress>a .label {
+    color: #bd2a50;
+}
+#app.kamesame #reviews .reviews-progress .faux-link:not([disabled]), #app.kamesame #reviews .reviews-progress>a:not([disabled]) {
+    box-shadow: 0 0 6px #8c5362;
+}
+#app.kamesame #reviews .reviews-progress .faux-link[disabled], #app.kamesame #reviews .reviews-progress>a[disabled] {
+    background-color: #bb5f77;
+}
+#app.kamesame #reviews .reviews-progress>* .datum {
+    color: #aeaeae;
+}
+#app.kamesame #reviews .reviews-by-bucket.incorrect h3 {
+    color: #aeaeae;
+    background-color: #840a02;
+}
+#app.kamesame #reviews .reviews-by-bucket.correct h3 {
+    color: #aeaeae;
+    background-color: #017d3f;
+}
+#app.kamesame #reviews .stats h4 {
+    background-color: #111;
+}
+#app.kamesame #reviews .review-bucket h4 {
+    background-color: #111;
+}
+
+/*
+ * Settings Styles
+ */
+#app.kamesame #account .plead-with-people {
+    color: #726da8;
+    background-color: #223;
+    border-color: #224;
+}
+#app.kamesame #account .plead-with-people a {
+    color: #c46a04;
+}
+#app.kamesame #account .danger {
+    background-color: #322;
+    border-color: #422;
+}
+#app.kamesame #account .danger h2 {
+    color: #bd2a50;
+}
+
+/*
+ * Study Styles
+ */
+#app.kamesame #study {
+    color: #aeaeae;
+}
+#app.kamesame #study .meaning svg text {
+    fill: #aeaeae;
+}
+#app.kamesame #study.kanji {
+    background-color: #7d1c35;
+}
+#app.kamesame #study.vocabulary {
+    background-color: #403d60;
+}
+#app.kamesame #study .input-area input.answered.exactly_correct {
+    background-color: #017d3f;
+}
+#app.kamesame #study .input-area input.answered.reading_correct {
+    background-color: #31860a;
+}
+#app.kamesame #study .input-area input.answered.alternate_match {
+    background-color: #97580f;
+}
+#app.kamesame #study .input-area input.answered.incorrect {
+    background-color: #840a02;
+}
+#app.kamesame #study .input-area input.answered.pending {
+    color: #aeaeae;
+    -webkit-text-fill-color: #aeaeae;
+}
+#app.kamesame #study .input-area input.answered, #app.kamesame #study .input-area .input.answered>*  {
+    color: #aeaeae;
+    -webkit-text-fill-color: #aeaeae;
+    border-top-color: #111;
+    border-bottom-color: #111;
+}
+#app.kamesame #study .outcome {
+    color: #aeaeae;
+    background-color: #111;
+}
+#app.kamesame #study .input-area .reward-notifications .reward-notification.good {
+    color: #017d3f;
+    background-color: #222;
+    border-color: #333;
+}
+#app.kamesame #study .input-area .reward-notifications .reward-notification.bad {
+    color: #840a02;
+    background-color: #222;
+    border-color: #333;
+}
+
+/*
+ * Item Styles
+ */
+#app.kamesame #item .name.vocabulary {
+    color: #726da8;
+    background-color: #223;
+}
+#app.kamesame #item .name.kanji {
+    color: #bd2a50;
+    background-color: #322;
+}
+#app.kamesame #item .rank.apprentice {
+    color: #bd2a50;
+    background-color: #570b1e;
+}
+#app.kamesame #item .rank.guru {
+    color: #726da8;
+    background-color: #3b385e;
+}
+#app.kamesame #item .rank.master {
+    color: #0e6ba8;
+    background-color: #062f4a;
+}
+#app.kamesame #item .rank.enlightened {
+    color: #7695ae;
+    background-color: #1864a2;
+}
+#app.kamesame #item .rank.burned {
+    color: #555;
+    background-color: #000;
+}
+}
