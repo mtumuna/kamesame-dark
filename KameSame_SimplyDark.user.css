@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           KameSame SimplyDark
 @namespace      community.wanikani.com
-@version        1.0.0
+@version        1.0.1
 @description    A dark theme for the KameSame platform.
 @author         vnClJTUL
 ==/UserStyle== */
@@ -251,6 +251,9 @@
     color: #840a02;
     background-color: #222;
     border-color: #333;
+}
+#app.kamesame #study .lesson-actions a {
+    color: #b7b7b7;
 }
 
 /*
