@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           KameSame SimplyDark
 @namespace      community.wanikani.com
-@version        1.0.1
+@version        1.0.5
 @description    A dark theme for the KameSame platform.
 @author         vnClJTUL
 ==/UserStyle== */
@@ -222,21 +222,29 @@
 #app.kamesame #study .input-area input.answered.reading_correct {
     background-color: #31860a;
 }
+#app.kamesame #study .input-area input.answered.alternate_match_completion {
+    background-color: #887231;
+}
 #app.kamesame #study .input-area input.answered.alternate_match {
     background-color: #97580f;
 }
 #app.kamesame #study .input-area input.answered.incorrect {
     background-color: #840a02;
 }
-#app.kamesame #study .input-area input.answered.pending {
+#app.kamesame #study .input-area input.answered.pending, #app.kamesame #study .input-area input.answered.pending:not(.recognition) {
     color: #aeaeae;
     -webkit-text-fill-color: #aeaeae;
 }
 #app.kamesame #study .input-area input.answered, #app.kamesame #study .input-area .input.answered>*  {
     color: #aeaeae;
     -webkit-text-fill-color: #aeaeae;
-    border-top-color: #111;
-    border-bottom-color: #111;
+    border-top-color: #222;
+    border-bottom-color: #222;
+}
+#app.kamesame #study .input-area input.recognition {
+    background-color: #666;
+    color: #222;
+    -webkit-text-fill-color: #222;
 }
 #app.kamesame #study .outcome {
     color: #aeaeae;
@@ -252,7 +260,7 @@
     background-color: #222;
     border-color: #333;
 }
-#app.kamesame #study .lesson-actions a {
+#app.kamesame #study .lesson-actions a, #app.kamesame #study .extra-actions a {
     color: #b7b7b7;
 }
 
